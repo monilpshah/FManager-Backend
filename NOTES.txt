@@ -1,0 +1,20 @@
+
+profile: monilpshah(monil31199@gmail.com)GITHUB-src : https://github.com/monilpshah/FManager 
+
+profile: (monutechguru31199@gmail.com)heroku src : https://fmanagerapi.herokuapp.com/ | https://git.heroku.com/fmanagerapi.git
+
+profile: (monutechguru31199@gmail.com)remotemysql src : https://remotemysql.com/databases.php
+
+Username: EQWzIIIodt
+
+Database name: EQWzIIIodt
+
+Password: mJcUb6PfVi
+
+Server: remotemysql.com
+
+Port: 3306
+
+These are the username and password to log in to your database and phpMyAdmin
+
+Make sure you keep your password secure. Ensure you keep back ups of your database in case it gets deleted.
