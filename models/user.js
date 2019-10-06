@@ -5,7 +5,9 @@ var user = {
     getAllUsers: function (callback) {
         return db.query("Select * from user_tbl", callback);
     },
-
+    login:function(item,callback){
+        return db.query("select * from user_tbl where email=? And password=?",[item.email,item.password],callback);
+    },
     getUserByEmail: function (email, callback) {
         return db.query("select * from user_tbl where email=?", [email], callback);
     },
