@@ -23,7 +23,7 @@ var income = {
         return db.query("delete from income_tbl where iid=?", [iid], callback);
     },
     updateIncome: function (iid, income, callback) {
-        return db.query("update income_tbl set amount=?,remarks=?,date=? where iid=?", [income.amount, income.remarks, income.date, iid], callback);
+        return db.query("update income_tbl set amount=?,remarks=? where iid=?", [income.amount, income.remarks, iid], callback);
     }
 
 };

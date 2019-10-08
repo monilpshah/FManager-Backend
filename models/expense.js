@@ -23,7 +23,7 @@ var expense = {
         return db.query("delete from expense_tbl where eid=?", [eid], callback);
     },
     updateExpense: function (eid, expense, callback) {
-        return db.query("update expense_tbl set amount=?,remarks=?,date=? where eid=?", [expense.amount, expense.remarks, expense.date, eid], callback);
+        return db.query("update expense_tbl set amount=?,remarks=? where eid=?", [expense.amount, expense.remarks, eid], callback);
     }
 
 };

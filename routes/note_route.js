@@ -43,7 +43,7 @@ router.post('/', function (req, res, next) {
 });
 router.delete('/:nid', function (req, res, next) {
 
-    expense.deleteExpense(req.params.nid, function (err, count) {
+    note.deleteNote(req.params.nid, function (err, count) {
 
         if (err) {
             res.json(err);
@@ -56,7 +56,7 @@ router.delete('/:nid', function (req, res, next) {
 });
 router.put('/:nid', function (req, res, next) {
 
-    expense.updateExpense(req.params.nid, req.body, function (err, rows) {
+    note.updateNote(req.params.nid, req.body, function (err, rows) {
 
         if (err) {
             res.json(err);
