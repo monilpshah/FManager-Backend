@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var demo = require("../models/forgotpassword");
+var demo = require("../models/forgotPassword");
 router.post('/', function(req, res, next) {
 
     console.log(req.body);
