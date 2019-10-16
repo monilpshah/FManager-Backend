@@ -2,28 +2,25 @@ var express = require('express');
 var router = express.Router();
 var income = require('../models/income');
 
-router.get('/:fkuserid?', function (req, res, next) {
+router.get('/:fkuserid', function(req, res, next) {
 
-    if (req.params.Fkuserid) {
+    if (req.params.fkuserid) {
 
-        income.getIncomeByFkuserid(req.params.Fkuserid, function (err, rows) {
+        income.getIncomeByFkuserid(req.params.fkuserid, function(err, rows) {
 
             if (err) {
                 res.json(err);
-            }
-            else {
+            } else {
                 res.json(rows);
             }
         });
-    }
-    else {
+    } else {
 
-        income.getAllIncome(function (err, rows) {
+        income.getAllIncome(function(err, rows) {
 
             if (err) {
                 res.json(err);
-            }
-            else {
+            } else {
                 res.json(rows);
             }
 

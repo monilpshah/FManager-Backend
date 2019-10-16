@@ -2,28 +2,25 @@ var express = require('express');
 var router = express.Router();
 var note = require('../models/note');
 
-router.get('/:fkuserid?', function (req, res, next) {
+router.get('/:fkuserid', function(req, res, next) {
 
-    if (req.params.Fkuserid) {
+    if (req.params.fkuserid) {
 
-        note.getNoteByFkuserid(req.params.Fkuserid, function (err, rows) {
+        note.getNoteByFkuserid(req.params.fkuserid, function(err, rows) {
 
             if (err) {
                 res.json(err);
-            }
-            else {
+            } else {
                 res.json(rows);
             }
         });
-    }
-    else {
+    } else {
 
-        note.getAllNotes(function (err, rows) {
+        note.getAllNotes(function(err, rows) {
 
             if (err) {
                 res.json(err);
-            }
-            else {
+            } else {
                 res.json(rows);
             }
 
