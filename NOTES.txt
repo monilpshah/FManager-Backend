@@ -5,11 +5,11 @@ profile: (monutechguru31199@gmail.com)heroku src : https://fmanagerapi.herokuapp
 
 profile: (monutechguru31199@gmail.com)remotemysql src : https://remotemysql.com/databases.php
 
-Username: EQWzIIIodt
+Username: a6FvoFalYR
 
-Database name: EQWzIIIodt
+Database name: a6FvoFalYR
 
-Password: mJcUb6PfVi
+Password: dMYtmsjCue
 
 Server: remotemysql.com
 

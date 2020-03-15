@@ -8,8 +8,8 @@ var connection = mysql.createPool({
 
 
     host: 'remotemysql.com',
-    user: 'EQWzIIIodt',
-    password: 'mJcUb6PfVi',
-    database: 'EQWzIIIodt'
+    user: 'a6FvoFalYR',
+    password: 'dMYtmsjCue',
+    database: 'a6FvoFalYR'
 });
 module.exports = connection;
